@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Pin Matching </title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="left-part">
+                    <input type="text" id="pin-number">
+                    <div class="round-btn">
+                        <span class="pin" onclick="generatePin()">Pin</span>
+                    </div>
+                </div>
+                <div class="right-part">
+                    <input type="text" id="user-input">
+                    <div class="cal-container" id="cal-container">
+                        <div class="btn">
+                            <button>9</button>
+                            <button>8</button>
+                            <button>7</button>
+                            <button>6</button>
+                        </div>
+                        <div class="btn">
+                            <button>5</button>
+                            <button>4</button>
+                            <button>3</button>
+                            <button>2</button>
+                        </div>
+                        <div class="btn">
+                            <button><</button>
+                            <button>1</button>
+                            <button>0</button>
+                            <button>C</button>
+                        </div>
+                    </div>
+                    <div class="submit-btn">
+                        <button id="submit-btn">Submit</button>
+                        <p><span id="try-left">3</span> try left</p>
+                    </div>
+                </div>
+            </div>
+            <div class="notification">
+                <div id="success">
+                    <p>✅ Pin matched, screat door is opening for you</p>
+                </div>
+                <div id="fail">
+                    <p>❌ Opps, Pin is not matched!</p>
+                </div>
+            </div>
+        </section>
+        <div class="loading-container" id="loading">
+            <div class="loading">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
